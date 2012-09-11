@@ -1,0 +1,19 @@
+{
+  "name": "g-config",
+  "version": "0.0.1",
+  "description": "Gestion de la configuration du logiciel. Encapsule nconf.",
+  "main": "index.js",
+  "repository": {
+    "type":         "svn",
+    "url":          "svn+ssh://www.gammadia-svn.net/var/svn/gammadia/node_modules/g-config/trunk/"
+  },
+  "publishConfig": {
+    "registry":     "http://npm.gammadia.ch/"
+  },
+  "engines": {
+    "node":         ">=0.8.0"
+  },
+  "dependencies": {
+    "nconf":        "0.6.x"
+  }
+}
