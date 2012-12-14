@@ -25,9 +25,10 @@ module.exports = (function () {
 		 *	@returns this
 		 */
 		load = function (config) {
+			config = config || {};
 			logger = config.logger || null;
 
-			if (logger !== null) {
+			if (logger) {
 				logger.info('Chargement du module de configuration');
 			}
 
@@ -74,7 +75,9 @@ module.exports = (function () {
 		 */
 		get = function (key) {
 			var value = nconf.get(key);
-			logger.debug({config_value: value}, 'Get: "%s"', key);
+			if (logger) {
+				logger.debug({config_value: value}, 'Get: "%s"', key);
+			}
 
 			return value;
 		};
