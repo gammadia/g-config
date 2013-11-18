@@ -1,11 +1,11 @@
 {
   "name": "g-config",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gestion de la configuration du logiciel. Encapsule nconf.",
   "main": "index.js",
   "repository": {
-    "type":         "svn",
-    "url":          "svn+ssh://www.gammadia-svn.net/var/svn/gammadia/node_modules/g-config/trunk/"
+    "type":         "git",
+    "url":          "ssh://git@stash.gammadia.ch:7999/nodmod/g-config.git"
   },
   "publishConfig": {
     "registry":     "http://npm:uOe5y3Vw1q2n6n43XD41734P854Ow5@npm.gammadia.ch:5984/registry/_design/app/_rewrite/"
